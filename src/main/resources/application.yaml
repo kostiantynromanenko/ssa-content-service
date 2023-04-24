@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      database: ssa
+      uri: "mongodb+srv://ssa-admin:hp8udGV4U3MBzvQg@ssa-cluster.4m3mods.mongodb.net/?retryWrites=true&w=majority"
