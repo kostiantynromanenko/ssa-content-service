@@ -1,5 +1,16 @@
 spring:
   data:
     mongodb:
-      database: ssa
-      uri: "mongodb+srv://ssa-admin:hp8udGV4U3MBzvQg@ssa-cluster.4m3mods.mongodb.net/?retryWrites=true&w=majority"
+      uri: ${DB_URI:}
+      database: ${DB_NAME:ssa}
+
+okta:
+  oauth2:
+    issuer: ${OKTA_ISSUER:}
+
+aws:
+  active-profile: ${AWS_PROFILE:}
+  region: ${AWS_REGION:eu-central-1}
+  s3:
+    image-bucket: ${S3_IMAGES_BUCKET:ssa-user-images}
+    thumbnail-bucket: ${S3_THUMBNAILS_BUCKET:ssa-image-thumbnails}
